@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title> Cadastro - Paulo's Barber </title>
+</head>
+
+<body
+    style="background-image: url(./img/img\ 2.gif); background-repeat: no-repeat; background-size:cover; background-attachment: fixed; color: aliceblue;">
+
+    <!-- Cabecalho -->
+    <header>
+        <h1 style="text-align: center; font-size: 50px;"> Barber Shop Paulo`s </h1>
+    </header>
+
+    <main style="display: flex; flex-direction: column;">
+
+        <!-- Subtitulo formulario -->
+        <h2 style="text-align: center;"> Formulario Cadastro </h2>
+
+        <!-- Formulario de cadastro -->
+        <form style="padding-bottom: bottom;">
+
+            <fieldset>
+                <!-- Input nome completo -->
+                <fieldset>
+                    <label for="nome"> Nome Completo </label>
+                    <input type="text" id="nome" required>
+                </fieldset>
+
+                <!-- Input email -->
+                <fieldset>
+                    <label for="email"> Email </label>
+                    <input type="email" id="email" required placeholder="seuemail@dominio.com"><br>
+                </fieldset>
+
+                <!-- Input Confirmação de email -->
+                <fieldset>
+                    <label for="confirme-email"> Confirme Email </label>
+                    <input type="email" id="confirme-email" required placeholder="seuemail@dominio.com">
+                </fieldset>
+
+                <!-- Input de senha -->
+                <fieldset>
+                    <label for="senha"> Senha </label>
+                    <input type="password" id="senha" required>
+                </fieldset>
+
+                <!-- Input Confirmação de senha -->
+                <fieldset>
+                    <label for="confirme-senha"> Confirme Senha </label>
+                    <input type="password" id="confirme-senha" required>
+                </fieldset>
+
+                <fieldset>
+                    <!-- Input Telefone -->
+                    <label for="telefone"> Telefone </label>
+                    <input type="tel" id="telefone" required placeholder="(xx) xxxx-xxxx">
+
+                    <!-- Input Whatsapp -->
+                    <label style="margin-left: 1em;" for="Whatsapp"> Whatsapp </label>
+                    <input type="tel" id="Whatsapp" required placeholder="(xx) xxxx-xxxx">
+
+                </fieldset>
+
+                <h2 style="text-align: center;"> Endereço </h2>
+
+                <fieldset>
+                    <!-- Input Cep -->
+                    <label for="cep"> CEP </label>
+                    <input type="number" name="cep" id="cep" placeholder="xxxxxx-xx">
+
+                    <!-- Input logradouro -->
+                    <label style="margin-left: 1em;" for="logradouro"> Logradouro </label>
+                    <input type="text" name="logradouro" id="logradouro" placeholder=" Rua, Av. Trav...">
+
+                </fieldset>
+
+                <fieldset>
+                    <!-- Input Bairros -->
+                    <label for="bairro"> Bairro </label>
+                    <input type="text" name="bairro" id="bairro">
+
+                    <!-- Input Cidades -->
+                    <label style="margin-left: 1em;" for="cidade"> Cidade </label>
+                    <input type="text" name="cidade" id="cidade">
+
+                    <!-- Opções de estados -->
+                    <label for="estado"> Estado </label>
+                    <select id="estado">
+                        <option> SP</option>
+                        <option> MG </option>
+                        <option> RJ </option>
+                    </select>
+
+                    <!-- Numero de endereço -->
+                    <label style="margin-left: 1em;" for="numero"> Numero </label>
+                    <input type="number" name="numero" id="numero">
+
+                </fieldset><br><br>
+
+                <!-- Opcoes de formas de contato -->
+
+                <fieldset>
+                    <legend> Como prefere o nosso contato ?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="Email" id="radio-email" required
+                            checked> Email</label>
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"
+                            required checked> Telefone</label>
+                    <label for="radio-whats"><input type="radio" name="contato" value="Whatsapp" id="radio-whats"
+                            required checked> Whatsapp</label>
+                </fieldset>
+
+                <!-- Horario de atendimento -->
+
+                <fieldset>
+                    <legend> Qual horário prefere ser atendido ?</legend>
+                    <select>
+                        <option> Manhã </option>
+                        <option> Tarde </option>
+                        <option> Noite </option>
+                    </select>
+                </fieldset>
+
+                <!-- Tipos de serviços -->
+
+                <fieldset>
+                    <legend> Qual tipo de serviço está em busca ?</legend>
+                    <select>
+                        <option> Corte Tesoura </option>
+                        <option> Navalhado </option>
+                        <option> Corte Maquina </option>
+                        <option> Corte Tesoura & Maquina </option>
+                        <option> Reflexo & Pintura </option>
+
+                    </select>
+                </fieldset>
+                <br>
+
+                <!-- Checkbox Notificações -->
+
+                <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades
+                    ?</label>
+                <br><br>
+
+                <!-- Tabela de horarios -->
+
+                <table border="5">
+                    <h3 style="margin-left: 1.5em;">Horário de Atendimento </h3>
+                    <tr>
+                        <th> Dias </th>
+                        <th> Horas </th>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 0 1em;">Terça à Sábado</td>
+                        <td style="padding: 0 1em;"> 8hrs - 20hrs</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 0 1em;">Domingo </td>
+                        <td style="padding: 0 1em;"> 8hrs - 15hrs </td>
+                    <tr>
+                        <td style="text-align: center; padding: 0 1em;">Feriados </td>
+                        <td style="padding: 0 1em;">Sob consulta </td>
+                    </tr>
+                </table>
+
+                <!-- Mensagem textarea-->
+
+                <div style="display: flex; flex-direction: column; width: 40%; margin-top: 1em;">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="30" rows="10" id="mensagem"></textarea>
+                </div>
+
+
+                <!-- Btn envio formulario & reset -->
+                <div style="margin:1em;">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
